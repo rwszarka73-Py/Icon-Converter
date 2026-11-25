@@ -1,0 +1,9 @@
+# Made by PyStudio - files Git shouldn't track
+__pycache__/
+*.pyc
+publish/
+build/
+dist/
+.venv/
+venv/
+*.spec

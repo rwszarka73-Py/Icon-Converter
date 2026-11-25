@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>420</width><height>540</height></rect></property>
+  <property name="minimumSize"><size><width>420</width><height>540</height></size></property>
+  <property name="maximumSize"><size><width>420</width><height>540</height></size></property>
+  <property name="windowTitle"><string>Icon Converter</string></property>
+  <property name="windowIcon"><iconset><normaloff>converter_icon.ico</normaloff>converter_icon.ico</iconset></property>
+  <property name="styleSheet"><string notr="true">QMainWindow, QWidget#centralwidget { background-color: #1e2430; }
+QLabel { color: #d8dee9; background: transparent; }
+QLabel#titleLabel { color: #ffffff; font-size: 16pt; font-weight: 600; }
+QLabel#subtitleLabel { color: #8b95a7; }
+QLabel#imageLabel { background-color: #1a1f29; border: 2px dashed #3b4558; border-radius: 10px; color: #6b7689; font-size: 11pt; }
+QCheckBox { color: #d8dee9; spacing: 8px; }
+QCheckBox::indicator { width: 16px; height: 16px; border: 1px solid #445066; border-radius: 4px; background: #1a1f29; }
+QCheckBox::indicator:checked { background: #3b82f6; border-color: #3b82f6; }
+QPushButton#convertButton { background-color: #3b82f6; border: none; border-radius: 6px; color: #ffffff; font-weight: 600; }
+QPushButton#convertButton:hover { background-color: #4f91f7; }
+QPushButton#convertButton:pressed { background-color: #2f6fd8; }
+QMenuBar { background-color: #171c26; color: #d8dee9; }
+QMenuBar::item:selected { background-color: #2a3242; }
+QMenu { background-color: #262d3b; color: #e5e9f0; border: 1px solid #343d4f; }
+QMenu::item:selected { background-color: #3b82f6; }
+QStatusBar { background-color: #171c26; color: #8b95a7; }</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="titleLabel"><property name="geometry"><rect><x>24</x><y>14</y><width>372</width><height>32</height></rect></property><property name="text"><string>Icon Converter</string></property></widget>
+   <widget class="QLabel" name="subtitleLabel"><property name="geometry"><rect><x>24</x><y>46</y><width>372</width><height>20</height></rect></property><property name="text"><string>Turn a PNG, JPG or BMP image into an .ico icon.</string></property></widget>
+   <widget class="QLabel" name="imageLabel"><property name="geometry"><rect><x>24</x><y>80</y><width>372</width><height>300</height></rect></property>
+    <property name="acceptDrops"><bool>true</bool></property>
+    <property name="text"><string>Drop an image here&#10;PNG, JPG or BMP</string></property>
+    <property name="alignment"><set>Qt::AlignCenter</set></property>
+   </widget>
+   <widget class="QCheckBox" name="combineCheckbox"><property name="geometry"><rect><x>24</x><y>396</y><width>372</width><height>24</height></rect></property><property name="text"><string>Combine all sizes into a single .ico file</string></property></widget>
+   <widget class="QPushButton" name="convertButton"><property name="geometry"><rect><x>276</x><y>436</y><width>120</width><height>36</height></rect></property><property name="text"><string>Convert</string></property></widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar"><property name="geometry"><rect><x>0</x><y>0</y><width>420</width><height>24</height></rect></property>
+   <widget class="QMenu" name="menuFile"><property name="title"><string>&amp;File</string></property>
+    <addaction name="actionOpen_Icon_Folder"/><addaction name="separator"/><addaction name="actionExit"/></widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_Icon_Folder"><property name="text"><string>Open Icon Folder</string></property></action>
+  <action name="actionExit"><property name="text"><string>Exit</string></property></action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,22 @@
+{
+  "name": "Icon Converter",
+  "title": "",
+  "version": "1.0.0",
+  "description": "",
+  "company": "",
+  "copyright": "",
+  "icon": "",
+  "startup": "icon_converter.py",
+  "startupForm": "",
+  "interpreter": "/usr/bin/python3",
+  "args": "",
+  "workingDir": "",
+  "env": "",
+  "publishSingleFile": false,
+  "publishDeb": true,
+  "external": true,
+  "references": [],
+  "settings": [],
+  "saveSettingsOnExit": true,
+  "resources": []
+}
